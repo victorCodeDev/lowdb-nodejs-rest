@@ -8,8 +8,7 @@ app.use(morgan());
 app.use(express.json());
 
 // routes
+app.use(require('./routes/task.routes'));
 
 
-
-app.listen(3000);
-console.log('Server on port', 3000);
+module.exports = app;
